@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>CRM POPUP</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <button class="form__open">Кликни</button>
+  </div>
+
+  <div class="form__wrapper">
+    <form action="mail.php" method="POST" class="form">
+      <img src="img/form__close.png" alt="" class="form__close">
+      <div class="form__image-container">
+        <h2 class="form__title">Получите набор файлов для руководителя:</h2>
+
+        <div class="doc-image__container">
+          <img src="./img/form__doc.png" alt="" class="file-image doc-image">
+          <img src="./img/form__xls.png" alt="" class="file-image xls-image">
+          <img src="./img/form__pdf.png" alt="" class="file-image pdf-image">
+          <img src="./img/form__pdf.png" alt="" class="file-image pdf-image">
+          <img src="./img/form__pdf.png" alt="" class="file-image pdf-image">
+          <img src="./img/form__pdf.png" alt="" class="file-image pdf-image">
+          <img src="./img/form__pdf.png" alt="" class="file-image pdf-image">
+        </div>
+
+        <div class="book-image__container">
+          <img src="./img/form__open-book.png" alt="" class="form__image form__image_open-book">
+          <img src="./img/form__book.png" alt="" class="form__image form__image_book">
+          <img src="./img/form__phone.png" alt="" class="form__image form__image_phone">
+        </div>
+
+      </div>
+
+      <div class="form__input-container">
+        <label class="form__label">
+          <input class="form__input" name="email" type="email" placeholder="E-mail" required>
+          <div class="label__text">Введите Email для получения файлов:</div>
+      </label>
+        <label class="form__label">
+          <input class="form__input form__input_tel" name="phone" type="tel" placeholder="+7(000)000-00-00" maxlength="17" required>
+          <div class="label__text">Введите телефон для подтверждения доступа:</div>
+      </label>
+        <button class="form__submit" type="submit">Скачать файлы <img class="form__submit_image" src="./img/form__pointer.png" alt=""></button>
+        <p class="form__caption">PDF 4.7 MB<span class="caption_break"> DOC 0.8 MB </span> XLS 1.2 MB</p>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
